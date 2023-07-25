@@ -1,0 +1,28 @@
+<h2 class="mb-5 text-primary">Update product</h2>
+<form [formGroup]="productForm" (ngSubmit)="onHandleSubmit()">
+    <div class="mb-3 d-none">
+        <label class="form-label">ID</label>
+        <input type="text" class="form-control" formControlName="name">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Product Name</label>
+        <input type="text" class="form-control" formControlName="name">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Price</label>
+        <input type="number" class="form-control" formControlName="price">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Description</label>
+        <input type="text" class="form-control" formControlName="desc">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Image</label>
+        <input type="text" class="form-control" formControlName="image">
+    </div>
+    <select class="form-select form-select-lg mb-3" formControlName="categoryId">
+        <option *ngFor="let cate of categoryes" value="{{cate._id}}">{{cate.name}}</option>
+    </select>
+    <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

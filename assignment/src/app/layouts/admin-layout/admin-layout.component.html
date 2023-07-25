@@ -1,0 +1,55 @@
+<div id="wrapper">
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="admin">
+            <div class="mx-3">Admin</div>
+            <i class="bi bi-cloud-check "></i>
+        </a>
+        <hr class="text-white">
+        <li class="nav-item active">
+            <a class="nav-link" href="admin">
+                <i class="bi bi-speedometer2"></i>
+                <span>Dashboard</span></a>
+        </li>
+        <hr class="text-white">
+        <li class="nav-item active">
+            <a class="nav-link" href="/admin/product-management">
+                <span>Product</span></a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="/admin/category-management">
+                <span>Category</span></a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="/admin/users">
+                <span>User</span></a>
+        </li>
+    </ul>
+    <div id="content-wrapper" class="d-flex flex-column">
+        <div id="content">
+            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-light small" placeholder="Search for..."
+                            aria-label="Search">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="button">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <a routerLink="/logout">Log out</a>
+            </nav>
+            <div class="container-fluid">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+        <footer class="sticky-footer bg-white">
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                    <span>Copyright &copy; Your Website 2021</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>

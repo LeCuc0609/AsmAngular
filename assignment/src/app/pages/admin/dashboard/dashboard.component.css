@@ -1,0 +1,12 @@
+.container-fluid {
+    position: relative;
+}
+
+h2 {
+    font-size: 70px;
+    color: gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+}
